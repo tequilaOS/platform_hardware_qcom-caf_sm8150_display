@@ -127,7 +127,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.max_frame_buffer_acquir
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.max_virtual_display_dimension=4096
 
 
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 # Recovery is enabled, logging is enabled
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_hw_recovery_dump=0
